@@ -20,6 +20,15 @@ When a second agent, Agent B, encounters a new query, the system performs a sema
 2. **Efficiency Through Quantization:** The use of scalar quantization significantly reduces the cost and time of vector search, addressing one of the main challenges of retrieving semantic memory.
 3. **Future Implications:** The ability for agents to share and apply generalized learnings across interactions has vast implications for the development of collaborative, memory-enabled AI systems.
 
+To run this file add following variables to your env or create a credentials.env file with the following variables 
+-
+endpoint = os.getenv("AZURE_SEARCH_ENDPOINT")
+credential = os.getenv("AZURE_SEARCH_KEY")
+azure_openai_endpoint = os.getenv("AZURE_OPENAI_EMBEDDINGS_ENDPOINT")
+openai_api_version = os.getenv("AZURE_OPENAI_API_VERSION")
+azure_openai_apikey = os.getenv("AZURE_OPENAI_API_KEY")
+openai_api_key=os.getenv("OPENAI_API_KEY")
+
 **Disclaimer:** This implementation is a personal interpretation of the methods described in the MetaReflection paper. The specific techniques used by the Microsoft Research team may differ. Feedback and suggestions are welcome! 
 
 Feel free to explore the repository and contribute to this ongoing exploration of semantic memory and agent collaboration.
